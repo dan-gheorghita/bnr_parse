@@ -65,6 +65,7 @@ async function uploadFile1(){
 }
 
 uploadFile1();
+
 async function generatePublicURL(){
     try {
         const fileId = '1NtS79lJkxEi-m4aj5NmuV_vlqcTvL3aB';

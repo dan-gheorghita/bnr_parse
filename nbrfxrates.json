@@ -1,0 +1,230 @@
+{
+    "DataSet": {
+        "$": {
+            "xmlns": "http://www.bnr.ro/xsd",
+            "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xsi:schemaLocation": "http://www.bnr.ro/xsd nbrfxrates.xsd"
+        },
+        "Header": [
+            {
+                "Publisher": [
+                    "National Bank of Romania"
+                ],
+                "PublishingDate": [
+                    "2023-05-18"
+                ],
+                "MessageType": [
+                    "DR"
+                ]
+            }
+        ],
+        "Body": [
+            {
+                "Subject": [
+                    "Reference rates"
+                ],
+                "OrigCurrency": [
+                    "RON"
+                ],
+                "Cube": [
+                    {
+                        "$": {
+                            "date": "2023-05-18"
+                        },
+                        "Rate": [
+                            {
+                                "_": "1.2521",
+                                "$": {
+                                    "currency": "AED"
+                                }
+                            },
+                            {
+                                "_": "3.0515",
+                                "$": {
+                                    "currency": "AUD"
+                                }
+                            },
+                            {
+                                "_": "2.5427",
+                                "$": {
+                                    "currency": "BGN"
+                                }
+                            },
+                            {
+                                "_": "0.9308",
+                                "$": {
+                                    "currency": "BRL"
+                                }
+                            },
+                            {
+                                "_": "3.4124",
+                                "$": {
+                                    "currency": "CAD"
+                                }
+                            },
+                            {
+                                "_": "5.1061",
+                                "$": {
+                                    "currency": "CHF"
+                                }
+                            },
+                            {
+                                "_": "0.6539",
+                                "$": {
+                                    "currency": "CNY"
+                                }
+                            },
+                            {
+                                "_": "0.2098",
+                                "$": {
+                                    "currency": "CZK"
+                                }
+                            },
+                            {
+                                "_": "0.6677",
+                                "$": {
+                                    "currency": "DKK"
+                                }
+                            },
+                            {
+                                "_": "0.1488",
+                                "$": {
+                                    "currency": "EGP"
+                                }
+                            },
+                            {
+                                "_": "4.9731",
+                                "$": {
+                                    "currency": "EUR"
+                                }
+                            },
+                            {
+                                "_": "5.7169",
+                                "$": {
+                                    "currency": "GBP"
+                                }
+                            },
+                            {
+                                "_": "1.3335",
+                                "$": {
+                                    "currency": "HUF",
+                                    "multiplier": "100"
+                                }
+                            },
+                            {
+                                "_": "0.0557",
+                                "$": {
+                                    "currency": "INR"
+                                }
+                            },
+                            {
+                                "_": "3.3370",
+                                "$": {
+                                    "currency": "JPY",
+                                    "multiplier": "100"
+                                }
+                            },
+                            {
+                                "_": "0.3442",
+                                "$": {
+                                    "currency": "KRW",
+                                    "multiplier": "100"
+                                }
+                            },
+                            {
+                                "_": "0.2589",
+                                "$": {
+                                    "currency": "MDL"
+                                }
+                            },
+                            {
+                                "_": "0.2598",
+                                "$": {
+                                    "currency": "MXN"
+                                }
+                            },
+                            {
+                                "_": "0.4238",
+                                "$": {
+                                    "currency": "NOK"
+                                }
+                            },
+                            {
+                                "_": "2.8697",
+                                "$": {
+                                    "currency": "NZD"
+                                }
+                            },
+                            {
+                                "_": "1.0958",
+                                "$": {
+                                    "currency": "PLN"
+                                }
+                            },
+                            {
+                                "_": "0.0424",
+                                "$": {
+                                    "currency": "RSD"
+                                }
+                            },
+                            {
+                                "_": "0.0575",
+                                "$": {
+                                    "currency": "RUB"
+                                }
+                            },
+                            {
+                                "_": "0.4382",
+                                "$": {
+                                    "currency": "SEK"
+                                }
+                            },
+                            {
+                                "_": "0.1338",
+                                "$": {
+                                    "currency": "THB"
+                                }
+                            },
+                            {
+                                "_": "0.2326",
+                                "$": {
+                                    "currency": "TRY"
+                                }
+                            },
+                            {
+                                "_": "0.1245",
+                                "$": {
+                                    "currency": "UAH"
+                                }
+                            },
+                            {
+                                "_": "4.5975",
+                                "$": {
+                                    "currency": "USD"
+                                }
+                            },
+                            {
+                                "_": "292.2952",
+                                "$": {
+                                    "currency": "XAU"
+                                }
+                            },
+                            {
+                                "_": "6.1469",
+                                "$": {
+                                    "currency": "XDR"
+                                }
+                            },
+                            {
+                                "_": "0.2371",
+                                "$": {
+                                    "currency": "ZAR"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
