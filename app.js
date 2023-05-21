@@ -1,6 +1,13 @@
+const fs = require('fs');
+const reqXml = require('./request.js');
+const xml2jsF = require('./xml2js.js');
+
+reqXml.requestXML();
+xml2jsF.convertxml2json();
+
 const {google} = require('googleapis');
 const path = require('path');
-const fs = require('fs');
+
 const { file } = require('googleapis/build/src/apis/file');
 
 const CLIENT_ID ='967205067013-jdkus19edmu8cbc91a4r7jr8b69fighn.apps.googleusercontent.com';
@@ -22,53 +29,54 @@ const drive = google.drive({
     auth : oauth2Client
 });
 
-const filePath = path.join(__dirname,'SuperMarioHub.jpg');
+// const filePath = path.join(__dirname,'SuperMarioHub.jpg');
 
-async function uploadFile(){
-    try {
-        const response = await drive.files.create({
-            requestBody : {
-                name : 'mario.jpg',
-                mimeType : 'image/jpg'
-            },
-            media: {
-                mimeType : 'image/jpg',
-                body : fs.createReadStream(filePath)
-            }
-        });
-        data1 = response.data;
-        console.log(response.data);
-    } catch (error) {
-        console.log(error.message);
-    }
-}
+// async function uploadFile(){
+//     try {
+//         const response = await drive.files.create({
+//             requestBody : {
+//                 name : 'mario.jpg',
+//                 mimeType : 'image/jpg'
+//             },
+//             media: {
+//                 mimeType : 'image/jpg',
+//                 body : fs.createReadStream(filePath)
+//             }
+//         });
+//         data1 = response.data;
+//         console.log(response.data);
+//     } catch (error) {
+//         console.log(error.message);
+//     }
+// }
 
 //uploadFile();
-const xml = 'rates.xml';
-
+const json = 'nbrfxrates.json';
+let fileId = '';
 async function uploadFile1(){
     try {
         const response = await drive.files.create({
             requestBody : {
-                name : 'rates.xml',
+                name : 'nbrfxrates.json',
                 mimeType : 'text/plain'
             },
             media: {
                 mimeType : 'text/plain',
-                body : fs.createReadStream(xml)
+                body : fs.createReadStream(json)
             }
         });
         console.log(response.data);
+        return(response.data.id);
     } catch (error) {
         console.log(error.message);
     }
 }
 
-uploadFile1();
+fileId = uploadFile1();
+console.log(fileId);
 
 async function generatePublicURL(){
     try {
-        const fileId = '1NtS79lJkxEi-m4aj5NmuV_vlqcTvL3aB';
         await drive.permissions.create({
             fileId : fileId,
             requestBody: {
@@ -86,4 +94,4 @@ async function generatePublicURL(){
     }
 }
 
-//generatePublicURL();
+generatePublicURL();
